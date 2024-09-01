@@ -1,7 +1,6 @@
 #Christian Davies
 #CBIS 4210
 #Assignment 01-03 - Inventory Management System
-
 #add an item to inventory
 def add_to_inventory(inventory, item_name, quantity):
     if item_name in inventory:
@@ -9,7 +8,6 @@ def add_to_inventory(inventory, item_name, quantity):
     else:
         inventory[item_name] = quantity
     print(f"Added {quantity} of {item_name} to inventory.")
-
 #display the current inventory
 def display_inventory(inventory):
     print("\nCurrent Inventory:")
