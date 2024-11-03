@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Sales Data</h1>
+<a href="{{ url_for('sales.add_sales_data') }}" class="btn btn-primary mb-3">Add New Sales Data</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Monthly Amount</th>
+            <th>Date</th>
+            <th>Region</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ table|safe }}
+    </tbody>
+</table>
+{% endblock %}

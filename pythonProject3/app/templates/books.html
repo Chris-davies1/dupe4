@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Manga Books</h1>
+    <ul class="list-group">
+        {% for book in books %}
+            <li class="list-group-item">
+                <h2>{{ book[1] }}</h2>
+                <p>{{ book[2] }}</p>
+                {% if book[3] %}
+                    <img src="{{ book[3] }}" alt="{{ book[1] }} cover" width="150">
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
