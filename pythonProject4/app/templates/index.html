@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center;">
+<h1><em>The Manga Zone!</em></h1>
+<br>
+<div style="text-align: center;">
+<h1 style="text-transform: capitalize;">Welcome to our online website</h1>
+<br>
+<div style="text-align: center;">
+<img src="{{ url_for('static', filename='assets/logo.jpg') }}" alt="Maga zone" width="900">
+<br>
+
+<br>
+<div style="text-align: center;">
+<a href="{{ url_for('manga') }}" style="font-size: 32px; font-weight: bold;">Go to Manga Page</a>
+{% endblock %}
